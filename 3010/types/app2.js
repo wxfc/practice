@@ -8,3 +8,10 @@ document.write(obj2.myProperty);
 // garbage collection
 obj1 = null;
 obj2 = null;
+
+// in-built object types
+var products = new Array();
+var date = new Date();
+var error = new Error("Something went wrong");
+var myFunc = new Function("document.write('Hello')");
+var regEx = new RegExp("\\d+");
