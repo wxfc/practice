@@ -16,6 +16,6 @@ function isPalindrome(str) {
 };
 
 console.log(isPalindrome("ABBA"));
-console.log(isPalindrome("Bobby"));
+console.log(isPalindrome("Bob"));
 console.log(isPalindrome("ABBA"));
 
