@@ -14,20 +14,23 @@
 
 // You can't stop talking to grandma until you shout BYE.
 
-const randomYear = []
+const randomYear = Math.floor(Math.random() * (1950 - 1930 + 1)) + 1930;
 
 function saySomething() {
-  prompt("Say something to Grandma: ");
+  return prompt("Say something to Grandma: ");
 }; 
 
 function talkingToGrandma() {
-  saySomething();
-  if (saySomething === saySomething.toUpperCase) {
-    return alert("NO, NOT SINCE 1938");
+  const answer = saySomething();
+  if (answer === "BYE") {
+    alert("BYE");
+  } else if (answer === answer.toUpperCase()) { 
+    alert(`NO, NOT SINCE ${randomYear}`);
+    talkingToGrandma();
   } else {
     alert("HUH?! SPEAK UP, SONNY!");
+    talkingToGrandma();
   };
-    return talkingToGrandma();   
 };
 
 talkingToGrandma();
