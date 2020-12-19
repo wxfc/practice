@@ -7,8 +7,9 @@
 # You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
 def find_smallest_int(arr)
-  sorted_arr = arr.sort
-  puts sorted_arr[0]
+  # sorted_arr = arr.sort
+  # puts sorted_arr[0]
+  p arr.min
 end
 
 find_smallest_int([34,15,88,2])
