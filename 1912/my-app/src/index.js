@@ -1,18 +1,10 @@
-// function inside of an object is referred to as a method
+import Teacher, { promote } from './teacher';
+import React, { Component } from 'react';
 
+// default -> import ... from '';
+// Named -> import { ... } from '';
 
-const person = {
-  name: 'Wayne',
-  // walk: function() {},
-  walk() {},
-  talk() {}
-};
+// const person = new Person('Wayne');
 
-// use bracket notation when you don't know ahead of time what property or method we're going to access
-
-person.talk();
-person.name = '';
-
-const targetMember = 'name';
-// person['name'] = 'John'
-person[targetMember.value] = 'John';
+const teacher = new Teacher('Wayne2', 'Software Engineering');
+teacher.teach();
